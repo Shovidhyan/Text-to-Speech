@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Sign Language Translator</title>
+    <link rel="icon" href="images/image.png" type="image/png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m5 8 6 6"/>
+                    <path d="m4 14 6-6 2-3"/>
+                    <path d="M2 5h12"/>
+                    <path d="M7 2h1"/>
+                    <path d="m22 22-5-10-5 10"/>
+                    <path d="M14 18h6"/>
+                </svg>
+            </div>
+            <h1>Indian Sign Language Translator</h1>
+            <p>Type or speak to see the corresponding sign language</p>
+        </header>
+
+        <main>
+            <div class="input-container">
+                <form id="textForm">
+                    <div class="text-input">
+                        <input type="text" id="textInput" placeholder="Type a word or phrase..." required>
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.3-4.3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <button id="voiceInput" class="voice-button" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                        <line x1="12" x2="12" y1="19" y2="22"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="video-container" id="videoContainer">
+                <div class="video-placeholder" id="placeholder">
+                    <p>No video selected</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Currently supporting basic words and phrases in Indian Sign Language</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
